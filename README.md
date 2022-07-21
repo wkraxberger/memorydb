@@ -123,5 +123,5 @@ Any data command that is run outside of a transaction block should commit immedi
 | END                           |                               |
 
 
-** Performance Considerations **
+**Performance Considerations**
 The most common operations are GET, SET, UNSET, and NUMEQUALTO. All of these commands should have an expected worst-case runtime of O(log N) or better, where N is the total number of variables stored in the database. The vast majority of transactions will only update a small number of variables. Accordingly, your solution should be efficient about how much memory each transaction uses.
