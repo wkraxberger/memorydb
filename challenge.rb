@@ -18,7 +18,7 @@ class MemoryDB
   end
 
   def unset(key)
-    @values[key] = nil
+    set(key, nil)
   end
 
   def numequalto(value)
